@@ -5,4 +5,4 @@
 
 Надеюсь, что ты поймешь мой код. (намёк на создателя :-) 
 
-Thanks you Stanislav Migunov.
+Author : Stanislav Migunov aka mr-w1lde
