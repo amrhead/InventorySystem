@@ -1,0 +1,3 @@
+<items>
+<item id="itemBtn_Hat" name="Hat" class="Head" objPath="" attachTo="HatAttach" icoPath="tex/ico_hat.png" />
+</items>

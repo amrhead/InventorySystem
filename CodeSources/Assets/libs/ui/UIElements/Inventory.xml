@@ -1,0 +1,62 @@
+<UIElements name="Menus">
+
+	<UIElement name="Inventory" mouseevents="1" keyevents="1" cursor="1" controller_input="1">
+
+		<GFx file="UI_Inventory.swf" layer="3">
+			<Constraints>
+				<Align mode="dynamic" valign="center" halign="center" scale="1" max="0"/>
+			</Constraints>
+		</GFx>
+
+		<functions>
+
+			<function name="AddItem" funcname="addItemAtInventory" desc="">
+				<param name="bntId" desc="" type="string"/>
+				<param name="itemName" desc="" type="string"/>
+				<param name="itemType" desc="" type="string"/>
+				<param name="itemUsing" desc="" type="bool"/>
+				<param name="itemIco" desc="" type="string"/>
+			</function>
+			
+			<function name="AddSlot" funcname="addSlot" desc="">
+				<param name="slotType" desc="" type="string"/>
+				<param name="slotUse" desc="" type="bool"/>
+			</function>
+			
+			<function name="UpdateButtonsAfterDrag" funcname="UpdateButtonsAfterDrag" desc=""/>
+			
+			<function name="RemoveAllButtons" funcname="RemoveAllButtons" desc=""/>
+			
+			<function name="RemoveItem" funcname="RemoveItem" desc="">
+				<param name="itemId" desc="" type="string"/>
+				<param name="count" desc="" type="int"/>
+			</function>
+			
+			<function name="SetItemCount" funcname="SetItemCount" desc="">
+				<param name="itemId" desc="" type="string"/>
+				<param name="count" desc="" type="int"/>
+			</function>
+
+		</functions>
+
+		<events>
+			<!-- buttons -->
+			<event name="onItemUse" fscommand="onItemUse" desc="">
+				<param name="slotType" desc="" type="string"/>
+				<param name="currentItem" desc="" type="string"/>
+			</event>
+			
+			<event name="onItemRemove" fscommand="onItemRemove" desc="">
+				<param name="slotType" desc="" type="string"/>
+				<param name="currentItem" desc="" type="string"/>
+			</event>
+			
+			<event name="onItemRemoveFromInventory" fscommand="onItemRemoveFromInventory" desc="">
+				<param name="itemId" desc="" type="string"/>
+			</event>
+
+		</events>
+
+
+	</UIElement>
+</UIElements>
